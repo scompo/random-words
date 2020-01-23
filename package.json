@@ -1,0 +1,39 @@
+{
+  "name": "random-words",
+  "version": "0.0.0",
+  "description": "Parole a caso per la cicce",
+  "type": "module",
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "standard && tap",
+    "lint": "npx standard --fix",
+    "coverage": "tap --coverage-report=html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scompo/random-words.git"
+  },
+  "keywords": [
+    "random",
+    "words",
+    "scompo"
+  ],
+  "author": "Mauro Scomparin <scompo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scompo/random-words/issues"
+  },
+  "homepage": "https://github.com/scompo/random-words#readme",
+  "dependencies": {
+    "fastify": "^2.11.0",
+    "fastify-static": "^2.5.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "standard": "*",
+    "tap": "^14.10.6"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
