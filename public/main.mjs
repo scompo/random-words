@@ -1,6 +1,10 @@
 'use strict'
 
 import m1 from './modules/m1.mjs'
+import version from './modules/version.mjs'
 
-m1()
+Promise.all([
+  m1(),
+  version()
+])
   .then(console.log)
