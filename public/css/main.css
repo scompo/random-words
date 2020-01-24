@@ -33,6 +33,7 @@ button{
   list-style-type: none;
   display: inline-flex;
   padding: 0;
+  width:100%;
 }
 
 .text-container li{
