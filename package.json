@@ -35,5 +35,8 @@
   },
   "standard": {
     "parser": "babel-eslint"
+  },
+  "engines": {
+    "node": "13.x"
   }
 }
