@@ -26,7 +26,10 @@
   "homepage": "https://github.com/scompo/random-words#readme",
   "dependencies": {
     "fastify": "^2.11.0",
-    "fastify-static": "^2.5.1"
+    "fastify-static": "^2.5.1",
+    "point-of-view": "^3.7.1",
+    "pug": "^2.0.4",
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

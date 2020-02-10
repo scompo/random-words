@@ -1,0 +1,16 @@
+extends layout
+
+block main
+  section
+    header
+      h1 Start a new sentence
+    section
+      a(href='/sentences/new') Start with a new random sentence
+  section
+    header
+      h1 Choose an existing sentence
+    section
+      ul#old-sentences
+        each oldSentence in oldSentences
+          li(data-id = oldSentence._id)
+            a(href='/sentences/view/' + oldSentence._id) #{oldSentence.sentence}
