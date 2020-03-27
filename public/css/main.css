@@ -48,11 +48,12 @@ a:visited{
 #actions {
   display: grid;
   margin: auto;
-  grid-gap: 0.5rem;
+  gap: 0.7rem;
 }
 
-#actions input {
+#actions button {
   width: 100%;
+  height: 10vh;
 }
 
 .nascosto {
