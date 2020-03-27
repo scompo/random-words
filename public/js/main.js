@@ -42,22 +42,61 @@ const removeWord = (stuff) => {
   }
 }
 
+const editSentence = (stuff, stuff2, sectionEdit, sectionCmd) => {
+  return (e) => {
+    setVisibile(sectionCmd, false)
+
+    const text = stuff.innerText
+    stuff2.value = text
+
+    setVisibile(sectionEdit, true)
+  }
+}
+
+const setVisibile = (section, visibile) => {
+  if (visibile) {
+    section.classList.remove('nascosto')
+  } else {
+    section.classList.add('nascosto')
+  }
+}
+
+const closeEdit = (stuff, stuff2, sectionEdit, sectionCmd) => {
+  return (e) => {
+    setVisibile(sectionEdit, false)
+
+    const text = stuff2.value.replace('\n', '')
+    stuff.innerText = text
+
+    setVisibile(sectionCmd, true)
+  }
+}
+
 const setup = async () => {
   return setupWords()
     .then(words => {
+      const sectionCmd = document.getElementById('cmd-section')
+      setVisibile(sectionCmd, true)
+
+      const sectionEdit = document.getElementById('edit-section')
+
       const stuff = document.getElementById('stuff')
+      const stuff2 = document.getElementById('stuff2')
 
       const buttonAdd = document.querySelector('#add')
-      buttonAdd.classList.remove('nascosto')
       buttonAdd.onclick = addWord(stuff, words)
 
       const buttonChange = document.getElementById('change')
-      buttonChange.classList.remove('nascosto')
       buttonChange.onclick = changeWord(stuff, words)
 
       const buttonRemove = document.getElementById('remove')
-      buttonRemove.classList.remove('nascosto')
       buttonRemove.onclick = removeWord(stuff)
+
+      const buttonEdit = document.getElementById('edit')
+      buttonEdit.onclick = editSentence(stuff, stuff2, sectionEdit, sectionCmd)
+
+      const buttonSave = document.getElementById('save')
+      buttonSave.onclick = closeEdit(stuff, stuff2, sectionEdit, sectionCmd)
     })
 }
 

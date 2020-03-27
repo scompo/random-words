@@ -1,14 +1,22 @@
 extends layout
 
 block main
-  section#text
+  section#cmd-section(class=["nascosto"])
+    section#text
+      header
+        h1 Current sentence
+      p#stuff
+    section#actions
+      button(id="add") Add a new word!
+      button(id="change") Change the last word!
+      button(id="remove") Remove the last word!
+      button(id="edit") Edit the sentence!
+  section#edit-section(class=["nascosto"])
     header
-      h1 Current sentence
-    p#stuff
-  section#actions
-    button(id="add", class=["nascosto"]) Add a new word!
-    button(id="change", class=["nascosto"]) Change the last word!
-    button(id="remove", class=["nascosto"]) Remove the last word!
+      h1 Edit current sentence
+    textarea#stuff2
+    section
+      button(id="save", class=["save"]) Ok!
   section#info
     p Words are from #[a(href="https://github.com/napolux/paroleitaliane/blob/master/paroleitaliane/110000_parole_italiane_con_nomi_propri.txt") napolux's paroleitaliane project].
 
