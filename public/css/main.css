@@ -55,18 +55,21 @@ a:visited{
   width: 100%;
 }
 
+.nascosto {
+  display: none;
+}
+
 @media screen and (max-width: 300px) {
   #actions {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 
 @media screen and (min-width: 900px) {
   #actions {
     width: 40vw;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
   }
 }
-
