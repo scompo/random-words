@@ -1,6 +1,6 @@
 {
   "name": "random-words",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parole a caso per la cicce",
   "type": "module",
   "scripts": {
