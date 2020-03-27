@@ -1,0 +1,14 @@
+extends ../layout
+
+block main
+  section#text
+    header
+      h1 Current sentence
+    p#stuff #{sentence.sentence}
+  section#actions
+    form(action="/sentences/edit/addNew/" + sentence._id, method="get")
+      input(type="submit", value="Add a new word!")
+    form(action="/sentences/edit/removeLast/" + sentence._id , method="get")
+      input(type="submit", value="Remove the last word!")
+  section#permalink
+    p You can use this #[a(href="/sentences/view/" + sentence._id) link] to save this sentence.

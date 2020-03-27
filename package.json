@@ -25,13 +25,16 @@
   },
   "homepage": "https://github.com/scompo/random-words#readme",
   "dependencies": {
-    "fastify": "^2.11.0",
-    "fastify-static": "^2.5.1"
+    "fastify": "^2.13.0",
+    "fastify-static": "^2.6.0",
+    "point-of-view": "^3.7.2",
+    "pug": "^2.0.4",
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "standard": "*",
-    "tap": "^14.10.6"
+    "babel-eslint": "^10.1.0",
+    "standard": "^14.3.3",
+    "tap": "^14.10.7"
   },
   "standard": {
     "parser": "babel-eslint"
