@@ -1,6 +1,6 @@
 {
   "name": "random-words",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Parole a caso per la cicce",
   "type": "module",
   "scripts": {
@@ -25,21 +25,14 @@
   },
   "homepage": "https://github.com/scompo/random-words#readme",
   "dependencies": {
-    "fastify": "^2.13.0",
-    "fastify-static": "^2.6.0",
-    "point-of-view": "^3.7.2",
-    "pug": "^2.0.4",
-    "uuid": "^3.4.0"
+    "fastify": "^3.20.2",
+    "fastify-static": "^4.2.3",
+    "point-of-view": "^4.15.1",
+    "pug": "^3.0.2",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "standard": "^14.3.3",
-    "tap": "^14.10.7"
-  },
-  "standard": {
-    "parser": "babel-eslint"
-  },
-  "engines": {
-    "node": "13.x"
+    "standard": "*",
+    "tap": "*"
   }
 }
