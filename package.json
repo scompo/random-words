@@ -26,7 +26,7 @@
   "homepage": "https://github.com/scompo/random-words#readme",
   "dependencies": {
     "fastify": "^3.20.2",
-    "fastify-static": "^4.2.4",
+    "fastify-static": "^4.4.1",
     "point-of-view": "^4.15.1",
     "pug": "^3.0.2",
     "uuid": "^8.3.2"
